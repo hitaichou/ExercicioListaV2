@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace ExercicioListaV2
 {
@@ -10,6 +7,8 @@ namespace ExercicioListaV2
         public int Id { get; set; }
         public string Nome { get; set; }
         public double Salario { get; set; }
+
+        public Funcionario() { }
 
         public Funcionario(int id, string nome, double salario)
         {
@@ -23,8 +22,6 @@ namespace ExercicioListaV2
             //Regra para aumento salarial com entrada em porcentagem
             Salario = Salario + (Salario * (porcentagem / 100));
         }
-
-        //public void Lista ()
 
         //Sobreposição
         public override string ToString()
